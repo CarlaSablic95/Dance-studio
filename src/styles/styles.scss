@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+@font-face {
+    font-family: "Brittany";
+    src: url("../assets/fonts/brittany/Brittany.ttf")
+  }
+
+:root {
+    --primary-color: #4D236C;
+    --secondary-color: #7e84f2;
+    --tertiary-color: #6dccf2;
+    --dark-color: #2c2c2c;
+}
+
+*::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--primary-color) 30%, var(--tertiary-color) 100%);
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+  }
+
+.brittany {
+    font-family: "Brittany";
+  }
+  
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+h1 {
+    font-weight: lighter !important;
+}
+
+.seccion-principal {
+    background-image: url('../pages/Home/img/circle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-position: 700px -200px;
+    display: flex;
+    justify-content: center;
+    .titulo-principal {
+        font-size: 3rem;
+    }
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-image: url('../pages/Home/img/equipo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    
+.contenedor-imagen {
+        top: 30px;
+    .bailarina {
+        width: 650px;
+        top: 20px;
+    }
+}
+
+.circulo-2 {
+    top: -50px;
+    right: -50px;
+    width: 100px;
+}
+
+.circulo-3 {
+    width: 100px;
+    bottom: -50px;
+    left: -50px;
+}
+
+.cursos {
+    background: linear-gradient(129deg, rgba(118,99,242,1) 0%, rgba(126,132,242,1) 38%, rgba(114,182,242,1) 69%, rgba(109,204,242,1) 93%);
+}
+
+.bailarines {
+    width: 45%;
+}
+
+footer {
+    background-color: var(--dark-color);
+    img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1336px) {
+    .seccion-principal {
+        background-position: 370px -100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .seccion-principal {
+        background-position: 350px -100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion-principal {
+        background-position: 250px -60px;
+        height: 90vh;
+    }
+}
