@@ -49,7 +49,7 @@ const Home = () => {
                         <p className='text-white px-5 fs-3'>Descubrí un mundo de movimientos, ritmo <br className='d-none d-md-block' /> y creatividad en nuestros cursos. <br /> ¡Explora tu pasión y desafía tus límites <br className='d-none d-md-block' /> con Dance Studio!</p>
                         <button className="btn btn-light ms-5">Ver cursos</button>
                     </div>
-                    <img src={Bailarines} alt="" className='bailarines'/>
+                    <img src={Bailarines} alt="" className='bailarines d-none d-md-block'/>
                 </div>
             </section>
         </>
