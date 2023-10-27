@@ -46,7 +46,7 @@ const Home = () => {
                 <h2 className='text-center text-white pb-4 text-uppercase'>Cursos</h2>
                 <div className="d-flex justify-content-evenly align-items-center">
                     <div className='px-5'>
-                        <p className='text-white px-5 fs-3'>Descubrí un mundo de movimientos, ritmo <br className='d-none d-md-block' /> y creatividad en nuestros cursos. <br /> ¡Explora tu pasión y desafía tus límites <br className='d-none d-md-block' /> con Dance Studio!</p>
+                        <p className='text-white px-3 px-md-5 fs-3'>Descubrí un mundo de movimientos, ritmo <br className='d-none d-lg-block' /> y creatividad en nuestros cursos. <br /> ¡Explora tu pasión y desafía tus límites <br className='d-none d-lg-block' /> con Dance Studio!</p>
                         <button className="btn btn-light ms-5">Ver cursos</button>
                     </div>
                     <img src={Bailarines} alt="" className='bailarines d-none d-md-block'/>
