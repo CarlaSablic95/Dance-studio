@@ -20,13 +20,13 @@ const Footer = () => {
         <div className="text-center">
           <h4 className="text-white text-uppercase mb-3">Contacto</h4>
           <p className="text-white">
-            <i class="bi bi-phone text-white"></i> 3412345678
+            <i className="bi bi-phone text-white"></i> 3412345678
           </p>
           <p className="text-white">
-          <i class="bi bi-envelope-at"></i> dance-studio@gmail.com
+            <i className="bi bi-envelope-at"></i> dance-studio@gmail.com
           </p>
           {/* <p className="text-white">
-            <i class="bi bi-geo-alt text-white"></i> Rioja 498, Rosario, Santa
+            <i className="bi bi-geo-alt text-white"></i> Rioja 498, Rosario, Santa
             Fe
           </p> */}
           {/* <iframe
@@ -42,9 +42,9 @@ const Footer = () => {
 
         <div className="text-center mb-3">
           <h4 className="text-white text-uppercase mb-4">Seguinos</h4>
-          <i class="bi bi-facebook text-white"></i>
-          <i class="bi bi-instagram px-3 text-white"></i>
-          <i class="bi bi-youtube text-white"></i>
+          <i className="bi bi-facebook text-white"></i>
+          <i className="bi bi-instagram px-3 text-white"></i>
+          <i className="bi bi-youtube text-white"></i>
         </div>
       </div>
       <div className="d-flex flex-column text-white text-center">
