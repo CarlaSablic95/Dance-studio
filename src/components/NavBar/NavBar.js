@@ -1,7 +1,7 @@
-import { HashLink } from 'react-router-hash-link';
 import './NavBar.scss';
 import Logo from './logo.png';
 import { Link, NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const routes = [
     {
@@ -11,6 +11,25 @@ const routes = [
     {
         path: '/#nosotros',
         link: 'Nosotros'
+    },
+    {
+        path: '#',
+        link: 'Cursos',
+        submenu: [
+            {
+                path: '/cursos/ninios',
+                link: 'Niños',
+            },
+            {
+                path: '/cursos/adolescentes',
+                link: 'Adolescentes',
+            },
+
+            {
+                path: '/cursos/jovenes',
+                link: 'Jovenes',
+            }
+        ],
     },
     {
         path: '/testimonios',
@@ -33,18 +52,24 @@ const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <ul className="navbar-nav">
-                        
-                        {/* <li className="nav-item mx-3 dropdown">
-                            <a className="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ul className="navbar-nav align-items-center">
+                        <li className="nav-item mx-3 dropdown">
+                            <Link className="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Cursos
-                            </a>
+                            </Link>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                {/* El método find devuelve un objeto y puedo acceder a la propiedad submenu, y a su vez puedo acceder a sus propiedades */}
+                                { routes.find(route => route.link === 'Cursos').submenu.map(submenuItem => (
+                                    <li key={submenuItem.path}>
+                                        <Link className='dropdown-item' to={submenuItem.path}>{submenuItem.link}</Link>
+                                    </li>
+                                )) }
+
+                                {
+                                    console.log(routes.find(route => route.link === 'Cursos'))
+                                }
                             </ul>
-                        </li> */}
+                        </li>
 {
                             routes.map((route) => (
                                 route.link === "Nosotros" ? <HashLink key={route.path} to={route.path} smooth className="mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center">{route.link}</HashLink>
