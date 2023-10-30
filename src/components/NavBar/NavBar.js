@@ -12,21 +12,20 @@ const routes = [
         path: '/#nosotros',
         link: 'Nosotros'
     },
+    
     {
-        path: '#',
-        link: 'Cursos',
         submenu: [
             {
-                path: '/cursos/ninios',
+                path: '/clases/niños',
                 link: 'Niños',
             },
             {
-                path: '/cursos/adolescentes',
+                path: '/clases/adolescentes',
                 link: 'Adolescentes',
             },
 
             {
-                path: '/cursos/jovenes',
+                path: '/clases/jovenes',
                 link: 'Jovenes',
             }
         ],
@@ -44,7 +43,7 @@ const routes = [
 const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg py-0 position-absolute z-3 text-uppercase w-100">
-            <div className="container-fluid">
+            <div className="container">
                 <Link className="navbar-brand" to="/">
                     <img src={Logo} alt="" className='logo rounded-circle' />
                 </Link>
@@ -53,31 +52,33 @@ const NavBar = () => {
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul className="navbar-nav align-items-center">
+                        {
+                            routes.map((route) => (
+                                route.link === "Nosotros" ? <HashLink key={route.path} to={route.path} smooth className="mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center">{route.link}</HashLink>
+                                    :
+                                    <NavLink key={route.path} to={route.path} className={({ isActive }) => `${isActive ? 'active' : ''} mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center`}>{route.link}</NavLink>
+                            ))
+                        }
+
                         <li className="nav-item mx-3 dropdown">
                             <Link className="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Cursos
+                                Clases
                             </Link>
                             <ul className="dropdown-menu">
                                 {/* El método find devuelve un objeto y puedo acceder a la propiedad submenu, y a su vez puedo acceder a sus propiedades */}
-                                { routes.find(route => route.link === 'Cursos').submenu.map(submenuItem => (
-                                    <li key={submenuItem.path}>
+                                {routes.map((route) => (
+                                    route.submenu ? (
+                                        route.submenu.map((submenuItem) => (
+                                            <li key={submenuItem.path}>
                                         <Link className='dropdown-item' to={submenuItem.path}>{submenuItem.link}</Link>
                                     </li>
-                                )) }
-
-                                {
-                                    console.log(routes.find(route => route.link === 'Cursos'))
-                                }
+                                        ))
+                                    ) : null
+                                ))}
                             </ul>
                         </li>
-{
-                            routes.map((route) => (
-                                route.link === "Nosotros" ? <HashLink key={route.path} to={route.path} smooth className="mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center">{route.link}</HashLink>
-                                :
-                                <NavLink key={route.path} to={route.path} className={({isActive}) => `${isActive ? 'active' : ''} mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center`}>{route.link}</NavLink>
-                            ))
-                        }
-                        
+
+
                     </ul>
                 </div>
             </div>

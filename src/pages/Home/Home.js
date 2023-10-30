@@ -1,8 +1,9 @@
 import Bailarina from './img/bailarina.png';
-import Niños from './img/niños.jpg';
+import Niños from './img/niños.webp';
 import Adolescentes from './img/adolescentes.jpg';
 import Jovenes from './img/jovenes.jpg';
 import 'animate.css'
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -37,39 +38,44 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="position-relative z-2 py-5 bg-cursos">
-                <h2 className='text-center pb-4 text-uppercase'>Cursos</h2>
+            <section className="position-relative z-2 py-5">
+                <h2 className='text-center pb-4 text-uppercase'>Clases</h2>
                 <div className="container">
                 <div className="row flex-column flex-md-row justify-content-evenly align-items-center">
-                    {/* <div className='px-5'>
-                        <p className='text-white px-3 px-md-5 fs-3'>Descubrí un mundo de movimientos, ritmo <br className='d-none d-lg-block' /> y creatividad en nuestros cursos. <br /> ¡Explora tu pasión y desafía tus límites <br className='d-none d-lg-block' /> con Dance Studio!</p>
-                        <button className="btn btn-light ms-5">Ver cursos</button>
-                    </div> */}
-
-                    <div className="card col-10 col-md-4 mb-5 px-0">
+                    
+                    <div className="card col-10 col-md-4 mb-5 px-0 clase-ninios">
+                    <Link to="/clases/niños" className='text-decoration-none'>
                         <img src={Niños} className="card-img-top img-fluid" alt="..." />
                         <div className="card-body text-white text-center">
                             <h5 className="card-title">Niños</h5>
                             <p className="card-text">8 a 12 años</p>
                         </div>
+                    </Link>
                     </div>
 
                     <div className="card col-10 col-md-4 mb-5 px-0">
+                    <Link to="/clases/adolescentes" className='text-decoration-none'>
                         <img src={Adolescentes} className="card-img-top img-fluid" alt="..." />
                         <div className="card-body text-white text-center">
                             <h5 className="card-title">Adolescentes</h5>
                             <p className="card-text">13 a 17 años</p>
                         </div>
+                    </Link>
                     </div>
 
                     <div className="card col-10 col-md-4 mb-5 px-0">
+                    <Link to="/clases/jovenes" className='text-decoration-none'>
                         <img src={Jovenes} className="card-img-top img-fluid" alt="..." />
                         <div className="card-body text-white text-center">
                             <h5 className="card-title">Adultos</h5>
-                            <p className="card-text">18+ años</p>
+                            <p className="card-text">+18 años</p>
                         </div>
+                    </Link>
                     </div>
                 </div>
+                    <div className="text-center">
+                        <Link className="btn btn-ver text-uppercase border-0 text-white px-4" to="/clases">Más info</Link>
+                    </div>
                 </div>
             </section>
         </>
