@@ -67,15 +67,12 @@ const Home = () => {
                     <Link to="/clases/jovenes" className='text-decoration-none'>
                         <img src={Jovenes} className="card-img-top img-fluid" alt="..." />
                         <div className="card-body text-white text-center">
-                            <h5 className="card-title">Adultos</h5>
-                            <p className="card-text">+18 años</p>
+                            <h5 className="card-title">Jovenes</h5>
+                            <p className="card-text">18 a 30 años</p>
                         </div>
                     </Link>
                     </div>
                 </div>
-                    <div className="text-center">
-                        <Link className="btn btn-ver text-uppercase border-0 text-white px-4" to="/clases">Más info</Link>
-                    </div>
                 </div>
             </section>
         </>

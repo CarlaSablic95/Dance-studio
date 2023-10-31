@@ -54,7 +54,7 @@ const NavBar = () => {
                     <ul className="navbar-nav align-items-center">
                         {
                             routes.map((route) => (
-                                route.link === "Nosotros" ? <HashLink key={route.path} to={route.path} smooth className="mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center">{route.link}</HashLink>
+                                route.link === "Nosotros" ? <HashLink key={route.path} to={route.path} smooth className="mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center text-center">{route.link}</HashLink>
                                     :
                                     <NavLink key={route.path} to={route.path} className={({ isActive }) => `${isActive ? 'active' : ''} mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center`}>{route.link}</NavLink>
                             ))
@@ -77,8 +77,6 @@ const NavBar = () => {
                                 ))}
                             </ul>
                         </li>
-
-
                     </ul>
                 </div>
             </div>
