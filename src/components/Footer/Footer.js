@@ -23,7 +23,7 @@ const Footer = () => {
             <i className="bi bi-phone text-white"></i> 3412345678
           </p>
           <p className="text-white">
-            <i className="bi bi-envelope-at"></i> dance-studio@gmail.com
+            <i className="bi bi-envelope-at"></i> dancestudio.contact@gmail.com
           </p>
         </div>
 

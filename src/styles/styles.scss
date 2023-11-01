@@ -1,23 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import './variables.scss';
 
 @font-face {
     font-family: "Brittany";
     src: url("../assets/fonts/brittany/Brittany.ttf")
   }
 
-:root {
-    --primary-color: #4D236C;
-    --secondary-color: #7e84f2;
-    --tertiary-color: #6dccf2;
-    --dark-color: #2c2c2c;
-}
-
 *::-webkit-scrollbar {
     width: 13px;
   }
   
   *::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--primary-color) 30%, var(--tertiary-color) 100%);
+    background: linear-gradient(180deg, $primary-color 30%, $tertiary-color 100%);
     border-radius: 8px;
     border: 3px solid #ffffff;
   }
@@ -38,7 +32,7 @@ h1 {
 }
 
 .btn-primary {
-    background: linear-gradient(180deg, var(--primary-color) 30%, var(--secondary-color) 100%) !important;
+    background: linear-gradient(180deg, $primary-color 30%, $secondary-color 100%) !important;
 }
 
 .seccion-principal {
@@ -88,16 +82,12 @@ h1 {
 
 .card {
     border: none !important;
-    background-color: var(--dark-color) !important;
+    background-color: $dark-color !important;
     width: 25% !important;
 }
 
 .card-img, .card-img-bottom, .card-img-top {
     border-radius: 50%;
-}
-
-.btn-ver {
-    background: linear-gradient(129deg, #7663f2 0%, rgba(126,132,242,1) 38%, rgba(114,182,242,1) 69%, rgba(109,204,242,1) 93%);
 }
 
 // CLASES
@@ -109,6 +99,7 @@ h1 {
     background-position: center center;
     min-height: 70vh;
     filter: brightness(0.6);
+    background-attachment: fixed;
 }
 
 .portada-2 {
@@ -118,6 +109,7 @@ h1 {
     background-position: center 6%;
     min-height: 70vh;
     filter: brightness(0.6);
+    background-attachment: fixed;
 }
 
 .portada-3 {
@@ -127,11 +119,67 @@ h1 {
     background-position: 70% 30%;
     min-height: 70vh;
     filter: brightness(0.6);
+    background-attachment: fixed;
 }
 
 .letter-spacing {
     letter-spacing: 4px;
 }
+
+.overlay {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+}
+
+.clases:hover .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+// TESTIMONIOS
+.card-testimony {
+    background-color: $secondary-color !important;
+}
+
+.card-testimony:after,
+    .card-testimony:before {      
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 5px;
+      content: "";
+      transition: transform 0.3s ease-in;
+    }
+
+    .card-testimony:before {
+      border-left: 3px solid $primary-color;
+      border-right: 3px solid $primary-color;
+      transform: scaleY(0);
+    }
+
+    .card-testimony:after {
+      border-bottom: 3px solid $primary-color;
+      border-top: 3px solid $primary-color;
+      transform: scaleX(0);
+    }
+
+    .card-testimony:hover:before {
+      transform: scaleY(1);
+    }
+
+    .card-testimony:hover:after {
+      transform: scaleX(1);
+    }
+
 
 // CONTACTO
 .bg-contacto {
@@ -141,10 +189,11 @@ h1 {
     background-position: top;
     min-height: 70vh;
     filter: brightness(0.6);
+    background-attachment: fixed;
 }
 
 footer {
-    background-color: var(--dark-color);
+    background-color: $dark-color;
     img {
         width: 150px;
     }
