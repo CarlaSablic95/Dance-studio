@@ -31,7 +31,7 @@ const routes = [
         ],
     },
     {
-        path: '/testimonios',
+        path: '/#testimonios',
         link: 'Testimonios'
     },
     {
@@ -54,14 +54,14 @@ const NavBar = () => {
                     <ul className="navbar-nav align-items-center">
                         {
                             routes.map((route) => (
-                                route.link === "Nosotros" ? <HashLink key={route.path} to={route.path} smooth className="mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center text-center">{route.link}</HashLink>
+                                route.link === "Nosotros" || route.link === "Testimonios" ? <HashLink key={route.path} to={route.path} smooth className="mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-white text-center text-center">{route.link}</HashLink>
                                     :
-                                    <NavLink key={route.path} to={route.path} className={({ isActive }) => `${isActive ? 'active' : ''} mb-3 mb-lg-0 mx-4 text-decoration-none nav-item me-2 text-dark text-center`}>{route.link}</NavLink>
+                                    <NavLink key={route.path} to={route.path} className={({ isActive }) => `${isActive ? 'active' : ''} mb-3 mb-lg-0 me-2 text-decoration-none nav-item me-2 text-white text-center`}>{route.link}</NavLink>
                             ))
                         }
 
                         <li className="nav-item mx-3 dropdown">
-                            <Link className="nav-link dropdown-toggle text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link className="nav-link dropdown-toggle text-uppercase text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Clases
                             </Link>
                             <ul className="dropdown-menu">
@@ -70,7 +70,7 @@ const NavBar = () => {
                                     route.submenu ? (
                                         route.submenu.map((submenuItem) => (
                                             <li key={submenuItem.path}>
-                                        <Link className='dropdown-item' to={submenuItem.path}>{submenuItem.link}</Link>
+                                        <Link className='dropdown-item' to={submenuItem.path} key={submenuItem.path}>{submenuItem.link}</Link>
                                     </li>
                                         ))
                                     ) : null

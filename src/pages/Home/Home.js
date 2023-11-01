@@ -12,7 +12,7 @@ const Home = () => {
             <section className='position-relative z-2'>
                 <div className="seccion-principal">
                     <div className='d-flex justify-content-evenly align-items-center'>
-                        <h1 className='z-3 mx-3 px-2 titulo-principal text-start animate__animated animate__backInLeft'>Expresá tu <span style={{ color: '#4D236C', fontWeight: 'bolder' }}>pasión</span> <br className='d-none d-lg-block' />por la danza, <br className='d-none d-lg-block' /> estudiá con nosotros.</h1>
+                        <h1 className='z-3 mx-3 px-2 titulo-principal text-center text-md-start animate__animated animate__backInLeft'>Expresá tu <span style={{ color: '#4D236C', fontWeight: 'bolder' }}>pasión</span> <br className='d-none d-lg-block' />por la danza, <br className='d-none d-md-block' /> estudiá con nosotros.</h1>
                         <div className='position-relative contenedor-imagen d-none d-lg-block'>
                             <img src={Bailarina} alt="" className='bailarina animate__animated animate__flash' />
                         </div>
@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className='container' id='nosotros'>
+            <section className='container py-4 py-md-5' id='nosotros'>
                 <div className='d-flex justify-content-center align-items-center position-relative'>
                     <div className="row">
                         <div className="col-12 col-md-6 position-relative d-none d-md-block my-md-3">
@@ -38,7 +38,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="position-relative z-2 py-5">
+            <section className="position-relative z-2 py-3">
                 <h2 className='text-center pb-4 text-uppercase'>Clases</h2>
                 <div className="container">
                 <div className="row flex-column flex-md-row justify-content-evenly align-items-center">
@@ -74,6 +74,9 @@ const Home = () => {
                     </div>
                 </div>
                 </div>
+            </section>
+            <section id="testimonios">
+                <h2 className='text-center text-uppercase'>Testimonios</h2>
             </section>
         </>
     )

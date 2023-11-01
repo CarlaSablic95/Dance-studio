@@ -5,21 +5,21 @@ const Niños = () => {
     return (
         <>
             <section className="position-relative">
-            <div className='portada-1 position-relative'></div>
-            <div className='position-absolute top-50 start-50 translate-middle text-center text-white'>
-                <h1 className="fw-bolder text-uppercase letter-spacing">Niños</h1>
-            </div>
+                <div className='portada-1 position-relative'></div>
+                <div className='position-absolute top-50 start-50 translate-middle text-center text-white'>
+                    <h1 className="fw-bolder text-uppercase letter-spacing">Niños</h1>
+                </div>
             </section>
             
             <section className="container py-5">
                 <div className="text-center">
-                    <h2>Nivel de edad: 8 a 12 años</h2>
+                    <h2 className='mb-5'>Nivel de edad: 8 a 12 años</h2>
                 </div>
-                <div className='row justify-content-center align-items-center'>
+                <div className='row justify-content-center align-items-center px-5 px-md-3'>
                     <div className='col-12 col-md-5 text-center'>
                         <img src={Ballet} alt="" className='w-50 rounded-circle mb-4'/>
                     </div>
-                    <div className='col-12 col-md-5 text-center text-md-end'>
+                    <div className='col-12 col-md-5 text-center text-md-end mb-5 mb-md-3 '>
                         <h3>Ballet infantil</h3>
                         <hr />
                         <h4>Descripción:</h4>
@@ -33,7 +33,7 @@ const Niños = () => {
                         <p className=''>Lunes 18:30 a 19:30hs.</p>
                     </div>
 
-                    <div className='col-12 col-md-5 text-center text-md-start'>
+                    <div className='col-12 col-md-5 text-center text-md-start order-2 order-md-0'>
                         <h3>Jazz infantil</h3>
                         <hr />
                         <h5>Descripción:</h5>

@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 nav {
     .logo {
         width: 120px !important;
@@ -5,5 +7,11 @@ nav {
 
     a {
         letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: $dark-color;
     }
 }

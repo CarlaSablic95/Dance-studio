@@ -19,7 +19,7 @@ const Jovenes = () => {
                     <div className='col-12 col-md-5 text-center'>
                         <img src={Tango} alt="" className='w-50 rounded-circle mb-4'/>
                     </div>
-                    <div className='col-12 col-md-5 text-center text-md-end'>
+                    <div className='col-12 col-md-5 text-center text-md-end mb-5 px-5 px-md-3'>
                         <h3>Tango</h3>
                         <hr />
                         <h4>Descripción:</h4>
@@ -33,7 +33,7 @@ const Jovenes = () => {
                         <p className=''>Jueves 18:30 a 19:30hs.</p>
                     </div>
 
-                    <div className='col-12 col-md-5 text-center text-md-start'>
+                    <div className='col-12 col-md-5 text-center text-md-start order-2 order-md-0 px-5 px-md-3'>
                         <h3>Hip-Hop</h3>
                         <hr />
                         <h5>Descripción:</h5>

@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Niños from "./pages/Niños/Niños";
 import Adolescentes from "./pages/Adolescentes/Adolescentes";
 import Jovenes from "./pages/Jovenes/Jovenes";
+import Contacto from "./pages/Contacto/Contacto";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/clases/niños" element={<Niños />}></Route>
           <Route path="/clases/adolescentes" element={<Adolescentes />}></Route>
           <Route path="/clases/jovenes" element={<Jovenes />}></Route>
+          <Route path="/contacto" element={<Contacto />}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />

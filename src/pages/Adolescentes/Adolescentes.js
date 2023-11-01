@@ -15,7 +15,7 @@ const Adolescentes = () => {
                 <div className="text-center">
                     <h2>Nivel de edad: 13 a 17 años</h2>
                 </div>
-                <div className='row justify-content-center align-items-center'>
+                <div className='row justify-content-center align-items-center order-2 px-5 px-md-3'>
                     <div className='col-12 col-md-5 text-center'>
                         <img src={Breakdance} alt="" className='w-50 rounded-circle mb-4'/>
                     </div>
@@ -33,7 +33,7 @@ const Adolescentes = () => {
                         <p className=''>Sábados 10 a 12hs.</p>
                     </div>
 
-                    <div className='col-12 col-md-5 text-center text-md-start'>
+                    <div className='col-12 col-md-5 text-center text-md-start order-2 order-md-0 px-5 px-md-3'>
                         <h3>Danza contemporánea</h3>
                         <hr />
                         <h5>Descripción:</h5>
