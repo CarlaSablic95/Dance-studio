@@ -146,6 +146,7 @@ h1 {
 // TESTIMONIOS
 .card-testimony {
     background-color: $secondary-color !important;
+    width: 25% !important;
 }
 
 .card-testimony:after,
@@ -208,5 +209,9 @@ footer {
     .card {
         width: 70% !important;
     }
+
+    // .card-testimony {
+    //     width: 100% !important;
+    // }
 
 }
