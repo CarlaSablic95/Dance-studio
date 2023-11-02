@@ -15,7 +15,7 @@ const Jovenes = () => {
                 <div className="text-center">
                     <h2>Nivel de edad: 18 a 30 años</h2>
                 </div>
-                <div className='row justify-content-center align-items-center'>
+                <div className='row justify-content-center align-items-center animate__animated animate__fadeIn'>
                     <div className='col-12 col-md-5 text-center'>
                         <img src={Tango} alt="" className='w-50 rounded-circle mb-4'/>
                     </div>
@@ -23,8 +23,7 @@ const Jovenes = () => {
                         <h3>Tango</h3>
                         <hr />
                         <h4>Descripción:</h4>
-                        <p>Diseñado para niños que desean explorar la gracia y la elegancia del ballet, este curso les ofrece una base sólida en técnica, postura y expresión corporal.</p>
-                        <p>Los pequeños bailarines aprenderán movimientos delicados y elegantes mientras desarrollan su coordinación, fuerza y confianza. Además, fomentamos la creatividad y la imaginación en cada paso, permitiendo que los niños cuenten historias a través de la danza.</p>
+                        <p>El curso de tango para jóvenes es una experiencia emocionante que te sumergirá en el mundo apasionado y elegante del tango argentino. Aprenderás los fundamentos del tango, incluyendo pasos básicos, giros, técnica de abrazo y conexión con tu pareja de baile.</p>
                         
                         <h4>Duración:</h4>
                         <p>4 meses</p>
@@ -37,8 +36,7 @@ const Jovenes = () => {
                         <h3>Hip-Hop</h3>
                         <hr />
                         <h5>Descripción:</h5>
-                        <p>Nuestro curso es una emocionante introducción al mundo del ritmo y la expresión. Diseñado para niños enérgicos y creativos, este curso combina movimientos dinámicos, ritmos pegajosos y un ambiente divertido.</p>
-                        <p>Los niños descubrirán el poder de la danza para transmitir emociones y contar historias emocionantes a través del movimiento.</p>
+                        <p>¿Te encanta la música moderna y quieres aprender a moverte con estilo? Nuestro curso de hip-hop para jóvenes es la elección perfecta. Aquí, explorarás el emocionante mundo del hip-hop, donde el ritmo, la creatividad y la actitud se combinan para crear una experiencia de baile única. Aprenderás una variedad de movimientos de hip-hop, como pasos, bloqueos, popping y locking, mientras te sumerges en la cultura de la danza urbana. </p>
 
                         <h4>Duración:</h4>
                         <p>4 meses</p>

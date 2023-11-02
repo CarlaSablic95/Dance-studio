@@ -15,7 +15,7 @@ const Adolescentes = () => {
                 <div className="text-center">
                     <h2>Nivel de edad: 13 a 17 años</h2>
                 </div>
-                <div className="row justify-content-center align-items-center order-2 px-5 px-md-3">
+                <div className="row justify-content-center align-items-center order-2 px-5 px-md-3 animate__animated animate__fadeIn">
                     <div className="col-12 col-md-5 text-center">
                         <img src={Breakdance} alt="" className="w-50 rounded-circle mb-4"/>
                     </div>
@@ -37,7 +37,7 @@ const Adolescentes = () => {
                         <h3>Danza contemporánea</h3>
                         <hr />
                         <h5>Descripción:</h5>
-                        <p>Nuestro curso de Danza Contemporánea para adolescentes es una experiencia enriquecedora que permite a los jóvenes explorar la expresión artística a través del movimiento. En este programa, los estudiantes se sumergirán en el mundo de la danza contemporánea, que fusiona elementos de ballet, moderno y diversas técnicas de danza contemporánea.</p>
+                        <p>Este curso es una experiencia enriquecedora que permite a los jóvenes explorar la expresión artística a través del movimiento. En este programa, los estudiantes se sumergirán en el mundo de la danza contemporánea, que fusiona elementos de ballet, moderno y diversas técnicas de danza contemporánea.</p>
 
                         <h4>Duración:</h4>
                         <p>4 meses</p>
