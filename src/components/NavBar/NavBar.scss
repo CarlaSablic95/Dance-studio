@@ -8,6 +8,10 @@ nav {
     a {
         letter-spacing: 2px;
     }
+
+    .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+        background-color: transparent !important;
+    }
 }
 
 @media (max-width: 768px) {
