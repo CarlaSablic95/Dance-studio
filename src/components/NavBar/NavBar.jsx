@@ -14,11 +14,13 @@ const routes = [
     },
 
     {
+        link: "Clases",
         submenu: [
             {
                 path: "/clases/niños",
                 link: "Niños",
             },
+
             {
                 path: "/clases/adolescentes",
                 link: "Adolescentes",
@@ -29,7 +31,6 @@ const routes = [
                 link: "Jovenes",
             }
         ],
-        link: "Clases"
     },
 
     {

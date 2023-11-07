@@ -12,6 +12,11 @@ nav {
     .dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
         background-color: transparent !important;
     }
+
+    .active {
+        border-bottom: 2px solid;
+        padding-bottom: 4px;
+    }
 }
 
 @media (max-width: 768px) {
